@@ -1,0 +1,11 @@
+<div *ngFor="let i of students, let x = index">
+  <p>Student Name {{x}}: {{i}}</p>
+</div>
+
+<!-- Array of Data -->
+<div class="movies">
+  <div *ngFor="let movie of Movies">
+    <h2>Movie Name: {{movie.Name}}</h2>
+    <p>Year of release: {{movie.Year}}</p>
+  </div>
+</div>

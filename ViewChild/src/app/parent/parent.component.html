@@ -1,0 +1,8 @@
+<div class="parent">
+    <p>Parent works!</p>
+    <div>
+        <input type="text" placeholder="Please enter value for child" [(ngModel)]="pvalue">
+        <button (click)="psend()">Send to child</button>
+    </div>
+    <app-child [value]="PVALUE"></app-child>
+</div>

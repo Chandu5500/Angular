@@ -1,0 +1,11 @@
+.child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 30vw;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 24px;
+}

@@ -1,0 +1,23 @@
+<!-- ngIf Example -->
+<div *ngIf="isAdmin then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>I'm Admin</ng-template>
+<ng-template #elseBlock>
+  <div *ngIf="isTeacher else elseBlock2">
+    I'm Teacher
+  </div>
+</ng-template>
+<ng-template #elseBlock2>
+  <div *ngIf="isStudent else elseBlock3">
+    I'm Student
+  </div>
+</ng-template>
+<ng-template #elseBlock3>I'm Something</ng-template>
+
+<!-- ngSwitch Example -->
+<input type="text" placeholder="Enter type" [(ngModel)]="userRole">
+<div [ngSwitch]="userRole">
+  <div *ngSwitchCase="'admin'">I'm Admin</div>
+  <div *ngSwitchCase="'student'">I'm Student</div>
+  <div *ngSwitchCase="'parent'">I'm Parent</div>
+  <div *ngSwitchDefault>Please select the correct one</div>
+</div>

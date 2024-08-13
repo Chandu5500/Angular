@@ -1,0 +1,24 @@
+<div>
+  <h1>ONEWAY DATABINDING</h1>
+  <div>
+    <input type="email" placeholder="Email" (change)="oneWay($event)">
+  </div>
+  <div>
+    <input type="password" placeholder="Password" (change)="oneWay($event)">
+  </div>
+  <p>{{email}}</p>
+  <p>{{psw}}</p>
+</div>
+
+<div>
+  <h1>TWOWAY DATABINDING</h1>
+  <div>
+    <input type="email" placeholder="Email" [(ngModel)]="Email">
+  </div>
+  <div>
+    <input type="password" placeholder="Password" [(ngModel)]="Password">
+  </div>
+  <p>{{Email}}</p>
+  <p>{{Password}}</p>
+  <button (click)="submit()">Submit</button>
+</div>

@@ -1,0 +1,10 @@
+.recipes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.recipe{
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}

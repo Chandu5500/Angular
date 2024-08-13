@@ -1,0 +1,13 @@
+<div>
+  <input type="text" placeholder="Iamge URL" [(ngModel)]="url"><br>
+  <input type="text" placeholder="Name" [(ngModel)]="name"><br>
+  <input type="email" placeholder="Email" [(ngModel)]="email"><br>
+  <input type="number" placeholder="Phone No" [(ngModel)]="phone"><br>
+  <button (click)="submit()">Submit</button>
+</div>
+<div [hidden]="ishidden">
+  <p>Name: {{sname}}</p>
+  <p>Email: {{semail}}</p>
+  <p>Phone: {{sphone}}</p>
+  <img [src]="surl" alt="sname">
+</div>

@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "RRR",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tKVruu8rD03CHvluLfSO1ceEdaJlrEEjaA&s"
+    },
+    {
+      "id": "2",
+      "title": "Kalki",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmc1-ao8hKEwlryZmfpV9pwnOhOmvv5st0Q&s"
+    },
+    {
+      "id": "3",
+      "title": "Black Panther",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwFhGZ5bpE1gXVAidIX3QjQ2XVvPn8NkA1Q&s"
+    },
+    {
+      "id": "8106",
+      "title": "Spiderman",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqW3jw28rCtY4FlLg04p69L30-kJNGkSZwg&s"
+    },
+    {
+      "id": "8705",
+      "title": "Hulk",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjfrZPQxNPae8J3XJC4Bxb51hALgc4CURmMA&s"
+    },
+    {
+      "id": "30503",
+      "title": "Iron Man",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTofVOKT0DO4X-O3TZkCzhps6-YxOg06jiYaw&s"
+    },
+    {
+      "id": "73400",
+      "title": "Captain Marvel",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRb_q66FBwenNmOCddufCp1nYmJjqhEW2psw&s"
+    }
+  ]
+}

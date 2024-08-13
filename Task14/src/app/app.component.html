@@ -1,0 +1,18 @@
+<div>
+  <button (click)="month()">Monthly</button>
+  <button (click)="year()">Yearly</button>
+  <div *ngIf="isVisual else elseBlock">
+    <div class="flex">
+      <p>$9.99/Month  </p>
+      <p>$19.99/Month </p>
+      <p>$29.99/Month </p>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div class="flex">
+      <p>$29.99/Year</p>
+      <p>$39.99/Year</p>
+      <p>$49.99/Year</p>
+    </div>
+  </ng-template>
+</div>

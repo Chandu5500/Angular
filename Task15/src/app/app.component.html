@@ -1,0 +1,11 @@
+<input type="number" placeholder="Enter Number" [(ngModel)]="selected">
+<div [ngSwitch]="selected">
+  <div *ngSwitchCase="0">Sunday</div>
+  <div *ngSwitchCase="1">Monday</div>
+  <div *ngSwitchCase="2">Tuesday</div>
+  <div *ngSwitchCase="3">Wednesday</div>
+  <div *ngSwitchCase="4">Thursday</div>
+  <div *ngSwitchCase="5">Friday</div>
+  <div *ngSwitchCase="6">Saturday</div>
+  <div *ngSwitchDefault>Please enter between 0-6 only</div>
+</div>

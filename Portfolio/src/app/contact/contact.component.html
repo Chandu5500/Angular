@@ -1,0 +1,39 @@
+<div class="contact">
+    <h2>Contact Form</h2>
+    <form class="contactForm" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+        <div class="input">
+            <label for="">Enter Name</label>
+            <input type="text" name="uname" ngModel required minlength="6"><br>
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted && contactForm.form.controls['uname']?.touched && contactForm.form.controls['uname'].hasError('required')">
+            Username is required
+        </div>
+        <div class="errors" *ngIf="contactForm.form.controls['uname']?.touched && contactForm.form.controls['uname'].hasError('minlength')">
+            Enter Minimum Characters
+        </div>
+        <div class="input">
+            <label for="">Enter Email</label>
+            <input type="email" name="email" ngModel required email><br>
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted && contactForm.form.controls['email']?.touched && contactForm.form.controls['uname'].hasError('required')">
+            Email is required
+        </div>
+        <div class="errors" *ngIf="contactForm.form.controls['email']?.touched && contactForm.form.controls['uname'].hasError('email')">
+            Enter proper Email
+        </div>
+        <div class="input">
+            <label for="">Enter Password</label>
+            <input type="password" name="password" ngModel required maxlength="10" minlength="8"><br>
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted && contactForm.form.controls['password']?.touched && contactForm.form.controls['password'].hasError('required')">
+            Password Required
+        </div>
+        <div class="errors" *ngIf="contactForm.form.controls['password']?.touched && contactForm.form.controls['password'].hasError('minlength')">
+            Enter minimum 8 characters
+        </div>
+        <div class="errors" *ngIf="contactForm.form.controls['password']?.touched && contactForm.form.controls['password'].hasError('maxlength')">
+            Enter maximun 10 characters
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<app-header [count]="c"></app-header>
+<div class="foods">
+  <div class="food" *ngFor="let f of foodRecipies">
+    <img src="{{f.photoUrl}}" alt="{{f.title}}">
+    <a href="https://pinchofyum.com/" target="_blank"><h2>{{f.title}}</h2></a>
+    <p>Course: {{f.course}}</p>
+    <p>Main Ingredient: {{f.mainIngredient}}</p>
+    <button (click)="add()">Add to Favourite</button>
+  </div>
+</div>
+<app-footer></app-footer>

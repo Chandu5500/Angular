@@ -1,0 +1,12 @@
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    justify-content: space-between;
+    display: flex;
+    position: sticky;
+}
+span{
+    color: red;
+}

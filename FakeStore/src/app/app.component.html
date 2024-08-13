@@ -1,0 +1,14 @@
+<app-header [count]="c"></app-header>
+<div class="datas">
+  <div class="data" *ngFor="let d of data">
+    <img src="{{d.image}}" alt="d.title">
+    <h2>{{d.title}}</h2>
+    <p>Price: {{d.price}}</p>
+    <p>Category: {{d.category}}</p>
+    <p>Rating: {{d.rating.rate}}</p>
+    <p>Count: {{d.rating.count}}</p>
+    <p>Description: {{d.description}}</p>
+    <button (click)="add()">Add To Cart</button>
+  </div>
+</div>
+<app-footer></app-footer>
